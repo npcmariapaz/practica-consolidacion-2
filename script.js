@@ -7,8 +7,12 @@ $(document).ready(function(){
             var select = document.querySelector('#opcion');
             json.forEach(option => {
                 select.appendChild(new Option(option.name, option.name));
-            });
-        })
-    });
+            var listado = document.getElementById('listados');
+				json.forEach(name => {
+					var li = document.createElement('li');
+					li.appendChild(document.createTextNode(name.texto));
+					listado.appendChild(li);
+                })
+    })
 
-
+        }) })
