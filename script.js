@@ -1,6 +1,5 @@
 
 $(document).ready(function(){
-    $('#inicio').click(function(){
         const url = 'https://digimon-api.vercel.app/api/digimon/'
         fetch(url)
         .then(response=> response.json())
@@ -10,9 +9,6 @@ $(document).ready(function(){
                 select.appendChild(new Option(option.name, option.name));
             });
         })
-        .catch(error => {
-            console.error('Error al cargar las opciones:', error);
-        });
     });
-})
+
 
