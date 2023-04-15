@@ -17,6 +17,7 @@ $(document).ready(function () {
         });
 });
 
+//desde aquí en adelante CHATGPT hizo casi todo
 
 $(document).ready(function () {
     var select = document.getElementById('opcion');
@@ -59,6 +60,8 @@ $(document).ready(function () {
                 imageRow.appendChild(imageHeader);
                 imageRow.appendChild(imageData);
                 table.appendChild(imageRow);
+                image.classList.add("img-fluid");
+
 
                 // Crea la fila de la descripción
                 var descriptionRow = document.createElement('tr');
