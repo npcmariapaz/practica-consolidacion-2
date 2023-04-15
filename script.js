@@ -8,9 +8,9 @@ $(document).ready(function(){
             json.forEach(option => {
                 select.appendChild(new Option(option.name, option.name));
             var listado = document.getElementById('listados');
-				json.forEach(name => {
+				json.forEach(option => {
 					var li = document.createElement('li');
-					li.appendChild(document.createTextNode(name.texto));
+					li.appendChild(document.createTextNode(option.name));
 					listado.appendChild(li);
                 })
     })
