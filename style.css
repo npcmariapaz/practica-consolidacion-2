@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(216, 221, 255);
+    margin: 11%;
+}
+
+.centro {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}

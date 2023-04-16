@@ -36,18 +36,29 @@ $(document).ready(function () {
                 table.classList.add('table');
                 table.classList.add('table-hover');
                 table.classList.add('table-success');
+                table.classList.add('table-sm');
+                table.classList.add('text-center');
+
+
 
 
                 // Crea la fila del nombre
                 var nameRow = document.createElement('tr');
                 var nameHeader = document.createElement('th');
                 nameHeader.scope = 'row';
-                
                 var nameData = document.createElement('td');
                 nameData.innerHTML = digimon.name;
                 nameRow.appendChild(nameHeader);
                 nameRow.appendChild(nameData);
                 table.appendChild(nameRow);
+                nameData.classList.add('fw-bold');
+                nameData.classList.add('fs-3');
+                nameData.classList.add('badge');
+                nameData.classList.add('text-bg-light');
+                
+
+                
+
 
                 // Crea la fila de la imagen
                 var imageRow = document.createElement('tr');
@@ -72,6 +83,9 @@ $(document).ready(function () {
                 descriptionRow.appendChild(descriptionHeader);
                 descriptionRow.appendChild(descriptionData);
                 table.appendChild(descriptionRow);
+                descriptionData.classList.add('badge');
+                descriptionData.classList.add('bg-primary');
+                descriptionData.classList.add('text-warp');
 
                 // Agrega la tabla al contenedor
                 tableContainer.appendChild(table);
