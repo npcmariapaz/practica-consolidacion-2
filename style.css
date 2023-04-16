@@ -2,9 +2,29 @@ body {
     background-color: rgb(216, 221, 255);
     margin: 11%;
 }
+body::before {
+        content: "";
+        background-image: url(./imagenheader.jpeg);
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+}
 
 .centro {
     display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.table {
+    background-color: rgb(216, 221, 255);
+  
+
+}
+.card{
+    background-color: rgb(121, 141, 229,0.7);
 }
