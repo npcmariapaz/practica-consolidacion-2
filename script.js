@@ -34,8 +34,9 @@ $(document).ready(function () {
                 // Crea la tabla
                 var table = document.createElement('table');
                 table.classList.add('table');
-                table.classList.add('table-bordered');
                 table.classList.add('table-hover');
+                table.classList.add('table-success');
+
 
                 // Crea la fila del nombre
                 var nameRow = document.createElement('tr');
