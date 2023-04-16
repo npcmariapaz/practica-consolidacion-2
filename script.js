@@ -42,7 +42,7 @@ $(document).ready(function () {
                 var nameRow = document.createElement('tr');
                 var nameHeader = document.createElement('th');
                 nameHeader.scope = 'row';
-                nameHeader.innerHTML = 'Name';
+                
                 var nameData = document.createElement('td');
                 nameData.innerHTML = digimon.name;
                 nameRow.appendChild(nameHeader);
@@ -53,7 +53,6 @@ $(document).ready(function () {
                 var imageRow = document.createElement('tr');
                 var imageHeader = document.createElement('th');
                 imageHeader.scope = 'row';
-                imageHeader.innerHTML = 'Image';
                 var imageData = document.createElement('td');
                 var image = document.createElement('img');
                 image.src = digimon.img;
@@ -68,7 +67,6 @@ $(document).ready(function () {
                 var descriptionRow = document.createElement('tr');
                 var descriptionHeader = document.createElement('th');
                 descriptionHeader.scope = 'row';
-                descriptionHeader.innerHTML = 'Description';
                 var descriptionData = document.createElement('td');
                 descriptionData.innerHTML = digimon.level + ' level ';
                 descriptionRow.appendChild(descriptionHeader);
